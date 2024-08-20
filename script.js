@@ -16,6 +16,7 @@ class Quiz {
         this.ans_3 = ans_3
     }
     //методы
+
 }
 
 let Quiz = [
@@ -24,3 +25,20 @@ let Quiz = [
     new Quiz('вопрос', 'ответ1', 'ответ2', 'ответ3')
 ]
 
+//анимации и обработка событий
+
+start_button.addEventListener('mouseenter', function() {
+    anime({
+        target: start_button,
+        duration: 500,
+        scale: 1.2
+    })
+})
+
+start_button.addEventListener('mouseleave', function() {
+    anime({
+        target: start_button,
+        duration: 500,
+        scale: 1
+    })
+})
