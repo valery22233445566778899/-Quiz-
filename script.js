@@ -19,7 +19,7 @@ class Quiz {
 
 }
 
-let Quiz = [
+let quiz = [
     new Quiz('вопрос', 'ответ1', 'ответ2', 'ответ3'),
     new Quiz('вопрос', 'ответ1', 'ответ2', 'ответ3'),
     new Quiz('вопрос', 'ответ1', 'ответ2', 'ответ3')
@@ -41,4 +41,9 @@ start_button.addEventListener('mouseleave', function() {
         duration: 500,
         scale: 1
     })
+})
+
+start_button.addEventListener('click', function() {
+    start_button.style.display = 'none'
+    for (let i = 0, i < )
 })
