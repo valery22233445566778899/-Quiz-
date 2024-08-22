@@ -126,6 +126,5 @@ start_button.addEventListener('click', function() {
                 opinion.push(quiz[a].answers[i])
             })
         }
-        
     }
 })
