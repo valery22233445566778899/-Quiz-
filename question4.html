@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>вопрос4</title>
-    </head>
-    <body style ="background-color:#CADAEB">
-    <h1 style="color:#465565 ; text-align: center;">хотите ли вы угловой диван?</h1>
-    <button class="button">да</button>
-    <button class="button2">нет</button>
-    <button class="button3">контакты</button>
-<style>
-    .button{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 40px 80px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:100px;
-        left: 30px;
-    }
-    .button:hover {
-            background-color:#A2D1FF;
-    }
-    .button:active {
-            background-color:#8EB4DC;
-    }
-    .button2{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 40px 80px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:300px;
-        right:180px;
-    }
-    .button2:hover {
-            background-color:#A2D1FF;
-    }
-    .button2:active {
-            background-color:#8EB4DC;
-    }
-    .button3{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 5px 15px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:-100px;
-        left:350px;
-    }
-    .button3:hover {
-            background-color:#A2D1FF;
-    }
-    .button3:active {
-            background-color:#8EB4DC;
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вопрос4</title>
+    <style>
+        body {
+            background-color: #CADAEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #465565;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #EDF6FF;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+        .button:hover {
+            background-color: #A2D1FF;
+        }
+        .button:active {
+            background-color: #8EB4DC;
+        }
+        .contacts {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Хотите ли вы угловой диван?</h1>
+    <div class="container">
+        <button class="button">да</button>
+        <button class="button">нет</button>
+    </div>
+    <div class="contacts">
+        <button class="button">контакты</button>
+    </div>
 </body>
 </html>
