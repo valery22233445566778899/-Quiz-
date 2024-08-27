@@ -2,78 +2,54 @@
 <html lang="ru">
 <head>
     <title>Вопрос 1</title>
+    <style>
+        .logo {
+            display: flex;
+            margin: 0;
+            background-image: url('https://github.com/valery22233445566778899/-Quiz-/blob/main/res/logoDivan.png?raw=true');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 70px;
+            width: 70px;
+        }
+        body {
+            background-color: #CADAEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #465565;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .button, .button2, .button3  {
+            background-color: #EDF6FF;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 40px;
+            font-size: 30px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .button:hover, .button2:hover, .button3:hover {
+            background-color: #A2D1FF;
+        }
+        .button:active, .button2:active, .button3:active {
+            background-color: #8EB4DC;
+        }
+    </style>
 </head>
 <body style ="background-color:#CADAEB">
     <h1 style="color:#465565 ;padding-top: 100px;right: 10px;">Куда вы хотите поставить диван?</h1>
     <button class="button">на кухню</button>
     <button class="button2">в гостиную</button>
     <button class="button3">контакты</button>
-    <div class="logo">
-    <style>
-    .logo {
-    display: flex;
-    margin: 0;
-    background-image: url('https://github.com/valery22233445566778899/-Quiz-/blob/main/res/logoDivan.png?raw=true');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70px;
-    width: 70px;
-}
-    .button{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 40px 80px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:100px;
-        left: 5px;
-    }
-    .button:hover {
-            background-color:#A2D1FF;
-    }
-    .button:active {
-            background-color:#8EB4DC;
-    }
-    .button2{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 40px 80px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:300px;
-        right:325px;
-    }
-    .button2:hover {
-            background-color:#A2D1FF;
-    }
-    .button2:active {
-            background-color:#8EB4DC;
-    }
-    .button3{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 5px 15px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:-200px;
-        left: 100px;
-    }
-    .button3:hover {
-            background-color:#A2D1FF;
-    }
-    .button3:active {
-            background-color:#8EB4DC;
-    }
-</style>
 </body>
 </html>
