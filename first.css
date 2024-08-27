@@ -13,10 +13,10 @@ body {
     color: #606D7C;
     border: none;
     border-radius: 12px;
-    padding: 20px 30px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 17px;
     cursor: pointer;
-    margin-left: 800px;
+    margin-left: 1700px;
 }
 .contakti:hover {
     background-color: #A2D1FF;
