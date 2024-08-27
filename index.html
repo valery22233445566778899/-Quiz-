@@ -1,25 +1,105 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
-        <title>Quiz</title>
-        <link rel="stylesheet" href="style.css"></linkrel>
+        <title>вопрос4</title>
     </head>
-    <body>
-        <div class="header">
-            <div class="logo">
-                <p class="logo-text"></p>
-            </div>
-            <div class="about-text">
-                <p><b><a href="">КОНТАКТЫ</a></b></p>
-            </div>
-        </div>
-        <h1 class="info-head">из какого материала вы хотите диван?</h1>
-        <p class="info-text">кожа
-        <p class="info-text">из натурального дерева
-        <p class="info-text">латекс
-        </p>
-        <div class="start-button button">
-        </div>
-        <script src='sc'></script>
-    </body>
+    <body style ="background-color:#CADAEB">
+    <h1 style="color:#465565 ; text-align: center;">хотите ли вы угловой диван?</h1>
+    <button class="button">да</button>
+    <button class="button2">нет</button>
+    <button class="button3">контакты</button>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    body {
+        font-family: "Inter", sans-serif;
+    }
+    .button{
+        background-color: #EDF6FF;
+        color:#606D7C;
+        border: none;
+        border-radius: 12px;
+        padding: 40px 80px;
+        font-size: 40px;
+        cursor: pointer;
+        position: relative;
+        top:100px;
+        left:650px;
+    }
+    .button:hover {
+            background-color:#A2D1FF;
+    }
+    .button:active {
+            background-color:#8EB4DC;
+    }
+    .button2{
+        background-color: #EDF6FF;
+        color:#606D7C;
+        border: none;
+        border-radius: 12px;
+        padding: 40px 80px;
+        font-size: 40px;
+        cursor: pointer;
+        position: relative;
+        top:100px;
+        right:-750px;
+    }
+    .logo {
+    display: flex;
+    margin: 0;
+    background-image: url('https://github.com/valery22233445566778899/-Quiz-/blob/main/res/logoDivan.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+}
+    .container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    .item {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+        
+    .button2:hover {
+            background-color:#A2D1FF;
+    }
+    .button2:active {
+            background-color:#8EB4DC;
+    }
+    .button3{
+        background-color: #EDF6FF;
+        color:#606D7C;
+        border: none;
+        border-radius: 12px;
+        padding: 5px 15px;
+        font-size: 40px;
+        cursor: pointer;
+        position: relative;
+        top:-100px;
+        right:-1100px;
+
+
+    }
+    .button3:hover {
+            background-color:#A2D1FF;
+    }
+    .button3:active {
+            background-color:#8EB4DC;
+    }
+</style>
+</body>
 </html>
