@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Вопрос 1</title>
-</head>
-<body style ="background-color:#CADAEB">
-    <h1 style="color:#465565 ;padding-top: 100px;right: 10px;">Куда вы хотите поставить диван?</h1>
-    <button class="button">на кухню</button>
-    <button class="button2">в гостиную</button>
-    <button class="button3">контакты</button>
-    <div class="logo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вопрос2</title>
     <style>
-    .logo {
-    display: flex;
-    margin: 0;
-    background-image: url('https://github.com/valery22233445566778899/-Quiz-/blob/main/res/logoDivan.png?raw=true');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70px;
-    width: 70px;
-}
-    .button{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 40px 80px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:100px;
-        left: 5px;
-    }
-    .button:hover {
-            background-color:#A2D1FF;
-    }
-    .button:active {
-            background-color:#8EB4DC;
-    }
-    .button2{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 40px 80px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:300px;
-        right:325px;
-    }
-    .button2:hover {
-            background-color:#A2D1FF;
-    }
-    .button2:active {
-            background-color:#8EB4DC;
-    }
-    .button3{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 5px 15px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:-200px;
-        left: 100px;
-    }
-    .button3:hover {
-            background-color:#A2D1FF;
-    }
-    .button3:active {
-            background-color:#8EB4DC;
-    }
-</style>
+        body {
+            background-color: #CADAEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #465565;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .item {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+        .button {
+            background-color: #EDF6FF;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+        }
+        .button:hover {
+            background-color: #A2D1FF;
+        }
+        .button:active {
+            background-color: #8EB4DC;
+        }
+        .contacts {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Какого размера вы хотите диван?</h1>
+    <div class="container">
+        <div class="item">
+            <button class="button">маленький</button>
+        </div>
+        <div class="item">
+            <button class="button">средний</button>
+        </div>
+        <div class="item">
+            <button class="button">большой</button>
+        </div>
+    </div>
+    <div class="contacts">
+        <button class="button">контакты</button>
+    </div>
 </body>
 </html>
