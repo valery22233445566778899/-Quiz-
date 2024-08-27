@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>вопрос2</title>
-    </head>
-    <body style ="background-color:#CADAEB">
-    <h1 style="color:#465565 ; text-align: center;">какого размера вы хотите диван?</h1>
-    <img src = "https://kingstyle.by/upload/Sh/imageCache/796/7b3/2232a7ae592c4220d92f296129fd2920.webp" style = "position: relative;border-radius: 12px; left:10px;top:100px; width: 250px;"/>
-    <img src = "https://craftmebel.by/assets/components/phpthumbof/cache/divan-28-800x640-750x530.4d7bc7baa64d232809eb99ef8807c270.jpg" style ="position: relative;border-radius: 12px; left:60px;top:100px; width: 305px;"/>
-    <img src = "https://cdn0.divan.by/img/v1/oIqE_vhNw5GW1R6Qy0sXTKcVSmvwpcXaHeDng0jNnX8/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQ1MjI5MDcucG5n.jpg" style = "position: relative;border-radius:12px ; width: 325px;top:100px; left:120px;"/>
-        <button class="button">маленький</button>
-        <button class="button2">средний</button>
-        <button class="button3">большой</button>
-        <button class="button4">контакты</button>
-    </body>
-        <style>
-        .button{
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вопрос2</title>
+    <style>
+        body {
+            background-color: #CADAEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #465565;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .item {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+        .button {
             background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 20px 25px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:110px;
-        left: 10px;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
         }
         .button:hover {
-            background-color:#A2D1FF;
-    }
-    .button:active {
-            background-color:#8EB4DC;
-    }
-    .button2{
-            background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 20px 75px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:110px;
-        left: 60px;
+            background-color: #A2D1FF;
         }
-        .button2:hover {
-            background-color:#A2D1FF;
-    }
-    .button2:active {
-            background-color:#8EB4DC;
-    }
-    .button3{
-            background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 20px 87px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:110px;
-        left: 120px;
+        .button:active {
+            background-color: #8EB4DC;
         }
-        .button3:hover {
-            background-color:#A2D1FF;
-    }
-    .button3:active {
-            background-color:#8EB4DC;
-    }
-    .button4{
-        background-color: #EDF6FF;
-        color:#606D7C;
-        border: none;
-        border-radius: 12px;
-        padding: 5px 15px;
-        font-size: 40px;
-        cursor: pointer;
-        position: relative;
-        top:-370px;
-        left:810px;
-    }
-    .button4:hover {
-            background-color:#A2D1FF;
-    }
-    .button4:active {
-            background-color:#8EB4DC;
-    }
+        .contacts {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
     </style>
+</head>
+<body>
+    <h1>Какого размера вы хотите диван?</h1>
+    <div class="container">
+        <div class="item">
+            <img src="https://kingstyle.by/upload/Sh/imageCache/796/7b3/2232a7ae592c4220d92f296129fd2920.webp" alt="Маленький диван"/>
+            <button class="button">маленький</button>
+        </div>
+        <div class="item">
+            <img src="https://craftmebel.by/assets/components/phpthumbof/cache/divan-28-800x640-750x530.4d7bc7baa64d232809eb99ef8807c270.jpg" alt="Средний диван"/>
+            <button class="button">средний</button>
+        </div>
+        <div class="item">
+            <img src="https://cdn0.divan.by/img/v1/oIqE_vhNw5GW1R6Qy0sXTKcVSmvwpcXaHeDng0jNnX8/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQ1MjI5MDcucG5n.jpg" alt="Большой диван"/>
+            <button class="button">большой</button>
+        </div>
+    </div>
+    <div class="contacts">
+        <button class="button">контакты</button>
+    </div>
+</body>
+</html>
