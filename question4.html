@@ -6,17 +6,11 @@
     <title>вопрос4</title>
     <link rel="stylesheet" href="style.css"></linkrel>
     <style>
-        body {
-            background-color: #CADAEB;
-            display: flex;
+        h1 {
+            color: #465565;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #465565;
         }
         .container {
             display: flex;
@@ -50,13 +44,19 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo" id="Home">
+            <p class="logo-text"></p>
+        </div>
+        <button class="button3">контакты</button>
+        <button class="button2">карзина</button>
+        <button class="button1">каталог</button>
+    </div>
     <h1>Хотите ли вы угловой диван?</h1>
     <div class="container">
         <button class="button yes">да</button>
         <button class="button no">нет</button>
     </div>
-    <div class="contacts">
-        <button class="button">контакты</button>
     </div>
     <script src="question-scripts\script4.js"></script>
 </body>
