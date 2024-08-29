@@ -35,7 +35,7 @@ body {
     color: #000000;
 }
 
-.button3 {
+.btn3 {
     background-color: #EDF6FF;
     color:#606D7C;
     border: none;
@@ -47,7 +47,7 @@ body {
     right: 20px;
 }
 
-.button2 {
+.btn2 {
     background-color: #EDF6FF;
     color:#606D7C;
     border: none;
@@ -59,7 +59,7 @@ body {
     right: 230px;
 }
 
-.button1 {
+.btn1 {
     background-color: #EDF6FF;
     color:#606D7C;
     border: none;
@@ -71,10 +71,10 @@ body {
     right: 420px;
 }
 
-.button3:hover, .button2:hover, .button1:hover {
+.btn3:hover, .btn2:hover, .btn1:hover {
     background-color:#A2D1FF;
 }
-.button3:active, .button2:active, .button1:active {
+.btn3:active, .btn2:active, .btn1:active {
     background-color:#8EB4DC;
 }
 
