@@ -1,7 +1,7 @@
 //Переменные
-let button_1 = document.querySelector('.button1')
-let button_2 = document.querySelector('.button2')
-let button_3 = document.querySelector('.button3')
+let button_1 = document.querySelector('.to-kitchen')
+let button_2 = document.querySelector('.to-living-room')
+let button_3 = document.querySelector('.to-bed-room')
 
 //Функции
 
