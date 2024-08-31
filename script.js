@@ -5,8 +5,13 @@ let ans_button2 = document.querySelector('.answer-2')
 let ans_button3 = document.querySelector('.answer-3')
 let doc_picture = document.querySelector('.picture')
 let doc_question = document.querySelector('.question')
-let bool = true
-let counter = 0
+let question1_cookie = getCookie('question1')
+let question2_cookie = getCookie('question2')
+let question3_cookie = getCookie('question3')
+let question4_cookie = getCookie('question4')
+let opinion = []
+let sofa = null
+console.log('hello')
 
 //функции
 function changeImage(src) {
@@ -100,6 +105,57 @@ let sofas = [
 
 //анимации и обработка событий
 
+//Получаем информацию о диванах
+
+//0. Место
+if (question1_cookie == 1) {
+    opinion.push('На кухню')
+}
+
+if (question1_cookie == 2) {
+    opinion.push('В гостинную')
+}
+
+if (question1_cookie == 3) {
+    opinion.push('В спальню')
+}
+
+//1. Размер
+if (question2_cookie == 1) {
+    opinion.push('Маленький')
+}
+
+if (question2_cookie == 2) {
+    opinion.push('Средний')
+}
+
+if (question2_cookie == 3) {
+    opinion.push('Большой')
+}
+
+//2. Материал
+if (question3_cookie == 1) {
+    opinion.push('Кожа')
+}
+
+if (question3_cookie == 2) {
+    opinion.push('Ткань')
+}
+
+if (question3_cookie == 3) {
+    opinion.push('Латекс')
+}
+
+//3. Форма
+if (question2_cookie == 1) {
+    opinion.push('Угловой')
+}
+if (question2_cookie == 2) {
+    opinion.push('Нет')
+}
+
+
+
 start_button.addEventListener('mouseenter', function() {
     anime({
         target: start_button,
@@ -117,82 +173,14 @@ start_button.addEventListener('mouseleave', function() {
 })
 
 if (window.location.href == 'index.html') {
-    let question1_cookie = getCookie('question1')
-    let question2_cookie = getCookie('question2')
-    let question3_cookie = getCookie('question3')
-    let question4_cookie = getCookie('question4')
-    let sofas_ = sofas
-    while(bool) {
-        if (sofas_.length >= 1) {
-            //Убираем Неправильные
-
-            // Первый вопрос
-            if (question1_cookie == 1) {
-                if (sofas_[0]['place_for']) {
-
-                }
-            }
-            if (question1_cookie == 2) {
-                if (sofas_[0]['place_for']) {
-
-                }
-            }
-            if (question1_cookie == 3) {
-                if (sofas_[0]['place_for']) {
-
-                }
-            }
-            //Второй вопрос
-            if (question2_cookie == 1) {
-                if (sofas[0]['size'] != 'Маленький') {
-                    sofas.splice(counter, 1)
-                }
-            }
-            if (question2_cookie == 2) {
-                if (sofas[0]['size'] != 'Средний') {
-                    sofas.splice(counter, 1)
-                }
-            }
-            if (question2_cookie == 3) {
-                if (sofas[0]['size'] != 'Большой') {
-                    sofas.splice(counter, 1)
-                }
-            }
-            //Третий вопрос
-            if (question3_cookie == 1) {
-                if (sofas[0]['material'] != 'Кожа') {
-                    sofas.splice(counter, 1)
-                }
-            }
-            if (question3_cookie == 2) {
-                if (sofas[0]['material'] != 'Ткань') {
-                    sofas.splice(counter, 1)
-                }
-            }
-            if (question3_cookie == 3) {
-                if (sofas[0]['material'] != 'Латекс') {
-                    sofas.splice(counter, 1)
-                }
-            }
-            //Четвёртый вопрос
-            if (question2_cookie == 1) {
-                if (sofas[0]['size'] != 'Маленький') {
-                    sofas.splice(counter, 1)
-                }
-            }
-            if (question2_cookie == 2) {
-                if (sofas[0]['size'] != 'Средний') {
-                    sofas.splice(counter, 1)
-                }
-            }
-
-
-        }
-        else if (sofas_.length == 1){
-            bool = false
-        }
-        else {
-
+    for (let i = 0; i < sofas.length; i += 1) {
+        if (sofas[i]['shape'] == opinion[3] && 
+            sofas[i]['size'] == opinion[1] &&
+            sofas[i]['material'] == opinion[2] &&
+            sofas[i]['place_for'] == opinion[0]) 
+            {
+            sofa = sofas[i]
+            console.log(sofa)
         }
     }
 }
