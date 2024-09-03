@@ -33,7 +33,7 @@ button_2.addEventListener('click', function () {
     window.location.href = 'question2.html'
 })
 
-button_2.addEventListener('click', function () {
+button_3.addEventListener('click', function () {
     setCookie('question1', 3, 1)
     window.location.href = 'question2.html'
 })
