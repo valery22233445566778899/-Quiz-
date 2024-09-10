@@ -25,10 +25,12 @@ function deleteCookie(name) {
 
 button_1.addEventListener('click', function () {
     setCookie('question4', 1, 1)
+    window.location.href = 'first.html'
 })
 
 button_2.addEventListener('click', function () {
     setCookie('question4', 2, 1)
+    window.location.href = 'first.html'
 })
 
 console.log(getCookie('question4'))
