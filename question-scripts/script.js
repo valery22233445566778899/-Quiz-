@@ -9,9 +9,10 @@ let question1_cookie = getCookie('question1')
 let question2_cookie = getCookie('question2')
 let question3_cookie = getCookie('question3')
 let question4_cookie = getCookie('question4')
+
 let opinion = []
 let sofa = null
-console.log('hello')
+
 
 //функции
 function changeImage(src) {
@@ -41,7 +42,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В гостинную',
         price: 350
     },
     {
@@ -49,7 +50,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Кожа',
-        place_for: ['В гостинную', 'На кухню'],
+        place_for: 'На кухню',
         price: 400
     },
     {
@@ -57,7 +58,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В спальню',
         price: 350
     },   
     {
@@ -65,7 +66,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В гостинную',
         price: 350
     },  
     {
@@ -73,7 +74,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Латекс',
-        place_for: ['В гостинную'],
+        place_for: 'В гостинную',
         price: 350
     }, 
     {
@@ -81,7 +82,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В спальню',
         price: 350
     },
     {
@@ -89,7 +90,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Ткань',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В спальню',
         price: 300
     }, 
     {
@@ -97,7 +98,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Кожа',
-        place_for: ['В гостинную'],
+        place_for: 'В гостинную',
         price: 400
     },   
 ];
@@ -193,6 +194,7 @@ if (window.location.href == 'index.html') {
             let sofa_picture = `https://github.com/valery22233445566778899/Quiz/blob/main/res/catalog/${sofa_id}.png?raw=true`
         }
     }
+
 }
 //Добавте картинки!!!!!!!
 //Добавте картинки!!!!!!!

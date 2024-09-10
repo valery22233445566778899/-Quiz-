@@ -7,7 +7,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В гостинную',
         price: 350
     },
     {
@@ -15,7 +15,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Кожа',
-        place_for: ['В гостинную', 'На кухню'],
+        place_for: 'На кухню',
         price: 400
     },
     {
@@ -23,7 +23,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В спальню',
         price: 350
     },   
     {
@@ -31,7 +31,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В гостинную',
         price: 350
     },  
     {
@@ -39,7 +39,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Латекс',
-        place_for: ['В гостинную'],
+        place_for: 'В гостинную',
         price: 350
     }, 
     {
@@ -47,7 +47,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Средний',
         material: 'Латекс',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В спальню',
         price: 350
     },
     {
@@ -55,7 +55,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Ткань',
-        place_for: ['В гостинную', 'В спальню'],
+        place_for: 'В спальню',
         price: 300
     }, 
     {
@@ -63,7 +63,7 @@ let sofas = [
         shape: 'Нет',
         size: 'Маленький',
         material: 'Кожа',
-        place_for: ['В гостинную'],
+        place_for: 'В гостинную',
         price: 400
     },   
 ];
