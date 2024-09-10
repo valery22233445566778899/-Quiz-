@@ -99,27 +99,64 @@ a{
     margin-bottom: 20px;
 }
 
+.containermain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px); /* Учитываем высоту заголовка */
+}
+
 .start-button {
     display: flex;
     background-color: #6F8093;
     height: 70px;
-    width: 242px;
+    width: 255px;
     border-radius: 12px;
     color: #CADAEB;
     padding: 0px 18px;
     font-size: 60px;
     text-align: center;
-    margin: auto;
-    margin-top: 100px;   
+    margin-top: 20px;   
     border: none;
     cursor: pointer;
-    position: absolute;
-    left: 90vh;
 }
 
 .start-button:hover {
     background-color: #A2D1FF;
 }
+
 .start-button:active {
     background-color: #8EB4DC;
+}
+
+
+
+#sofa-images, #sofa-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#sofa-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#sofa-images img {
+    width: 600px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+
+#sofa-prices {
+    font-size: 24px;
+    color: #465565;
+    text-align: center;
+    margin-top: 10px;
 }
